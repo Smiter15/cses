@@ -28,8 +28,10 @@ if (!existsSync(testFolder) || !existsSync(solutionPath)) {
 }
 
 // Run each test case
-readdirSync(testFolder).forEach((file) => {
-  if (file.endsWith('.in')) {
+readdirSync(testFolder)
+  .filter((file) => file.endsWith('.in'))
+  .sort((a, b) => parseInt(a) - parseInt(b))
+  .forEach((file) => {
     const testCaseName = file.replace('.in', '');
     const inputFilePath = join(testFolder, `${testCaseName}.in`);
     const outputFilePath = join(testFolder, `${testCaseName}.out`);
@@ -53,5 +55,4 @@ readdirSync(testFolder).forEach((file) => {
     } catch (err) {
       console.error(chalk.red(`Error executing test ${testCaseName}:`), err);
     }
-  }
-});
+  });
