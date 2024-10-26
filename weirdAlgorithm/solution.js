@@ -1,4 +1,9 @@
-// read input from standard input / cses
+// Test in the terminal with:
+// echo "3" | node weirdAlgorithm/solution.js
+
+// Test against test cases with:
+// node test weirdAlgorithm
+
 process.stdin.resume();
 process.stdin.setEncoding('utf-8');
 

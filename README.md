@@ -26,8 +26,7 @@ Each problem should be organized in its own folder with the following structure:
 │       └── 1.out           # Expected output for test case 1
 ```
 
-1. Write your solution in the `solution.js` file.
-2. Place test cases in the `tests` folder as `.in` files (input) and `.out` files (expected output).
+Write your solution in the `solution.js` file.
 
 ### Testing Solutions Locally
 

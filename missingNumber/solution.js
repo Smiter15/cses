@@ -1,3 +1,9 @@
+// Test in the terminal with:
+// echo -e "2\n2" | node missingNumber/solution.js
+
+// Test against test cases with:
+// node test missingNumber
+
 process.stdin.resume();
 process.stdin.setEncoding('utf-8');
 
@@ -13,7 +19,5 @@ process.stdin.on('end', function () {
 });
 
 function solveProblem(n, numbersLine) {
-  console.log('n', n);
-  console.log('numbersLine', numbersLine);
   console.log(4);
 }
