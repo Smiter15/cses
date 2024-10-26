@@ -29,19 +29,6 @@ Each problem should be organized in its own folder with the following structure:
 1. Write your solution in the `solution.js` file.
 2. Place test cases in the `tests` folder as `.in` files (input) and `.out` files (expected output).
 
-### Running Tests
-
-To run all tests across problems, use:
-
-```bash
-npm test
-```
-
-This command will automatically:
-
-- Run each test case found in the `tests` folder for each problem.
-- Display whether each test passed or failed, with color-coded output for easy reading.
-
 ### Testing Solutions Locally
 
 To test your solution file for a single input locally, you can use the `echo` command to pass in input values directly to your `solution.js` file:
