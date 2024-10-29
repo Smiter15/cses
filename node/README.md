@@ -30,6 +30,10 @@ Each problem should be organized in its own folder with the following structure:
 
 Write your solution in the `solution.js` file.
 
+### Example
+
+Weird algorithm in the Introductory Problems section has been completed as an example file. You can find the solution in `node/IntroductoryProblems/weirdAlgorithm/solution.js`.
+
 ### Testing Against test cases
 
 To test your solution against the provided test cases, run:
