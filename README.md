@@ -1,64 +1,73 @@
-# CSES Problem Solutions in JavaScript
+# CSES Problem Solutions Repository
 
-This repository provides a starter setup for solving [CSES problem set](https://cses.fi/) challenges using Node.js and JavaScript. Solutions are written in JavaScript and tested with a custom Node.js testing script. This setup helps you practice algorithms in a JavaScript environment while verifying your solutions locally.
+This repository is designed to help developers practice and solve the [CSES problem set](https://cses.fi/) using various programming languages. It provides a structured environment for writing, testing locally, and submitting algorithm solutions in multiple languages.
+
+## Project Structure
+
+The repository is organized by programming language, making it easy to add solutions and tests for different languages. Each language folder contains the necessary setup for solving CSES problems and running tests locally.
+
+```
+cses/
+├── node/                      # Solutions and tests in JavaScript (Node.js)
+│   ├── <section-name>/        # Folder for a specific section e.g. IntroductoryProblems
+│   │   └── <problem-name>/    # Folder for a specific problem e.g. weirdAlgorithm
+│   │       ├── solution.js    # Solution file for the problem
+│   │       └── tests/         # Folder containing test cases
+│   │           ├── 1.in       # Input for test case 1
+│   │           └── 1.out      # Expected output for test case 1
+│   └── README.md              # Instructions for Node.js environment
+├── python/                    # Solutions and tests in Python (future)
+└── README.md                  # General repository information
+```
 
 ## Getting Started
 
-### Installation
+### Installing Dependencies
 
-To get started, clone the repository and install dependencies with:
+1. **Clone the repository**:
 
-```bash
-npm install
-```
+   ```bash
+   git clone https://github.com/Smiter15/cses.git
+   cd cses
+   ```
 
-### Folder Structure
+2. **Navigate to the desired language folder**:
+   - For Node.js, navigate to `cses/node/` and follow the setup instructions in `cses/node/README.md`.
 
-Each problem should be organized in its own folder with the following structure:
+### Running Tests
 
-```
-/cses/
-│
-├── <problem-name>/
-│   ├── solution.js         # Your solution file for the problem
-│   └── tests/              # Folder containing test cases
-│       ├── 1.in            # Input for test case 1
-│       └── 1.out           # Expected output for test case 1
-```
-
-Write your solution in the `solution.js` file.
-
-### Testing Solutions Locally
-
-To test your solution file for a single input locally, you can use the `echo` command to pass in input values directly to your `solution.js` file:
+Each language folder contains specific instructions for running tests. For example, in the Node.js environment, you can run:
 
 ```bash
-echo "3" | node <problem-name>/solution.js
+npm test
 ```
 
-In this example, `3` is passed as input.
+Refer to the `README.md` file within each language folder for more details.
 
-#### Multiple Values in a Single Line
+## Contributing
 
-If your solution requires multiple inputs in one line, separate them with a space:
+We welcome contributions to expand the repository to other languages, add test cases, or improve existing solutions. To contribute:
 
-```bash
-echo "3 4" | node <problem-name>/solution.js
+1. **Fork the repository** and create a new branch for your language or feature.
+2. **Add your solution or feature** within the appropriate language folder.
+3. **Submit a pull request** with a description of your changes.
+
+### Adding New Languages
+
+If you'd like to add a new language environment (e.g., Python), please create a new folder in the `cses` directory following the structure below:
+
+```
+cses/
+└── python/
+    ├── <section-name>/
+    │     └── <problem-name>/
+    │          ├── solution.py     # Solution file for the problem
+    │          └── tests/          # Folder containing test cases for the problem
+    └── README.md                  # Instructions for setting up and testing in Python
 ```
 
-#### Multiple Values Across Multiple Lines
+Feel free to reach out with any questions or suggestions to make this project better for everyone practicing algorithm challenges!
 
-To provide input across multiple lines, use `-e` with `echo` and `\n` to separate lines:
+## License
 
-```bash
-echo -e "3\n4" | node <problem-name>/solution.js
-```
-
-This command passes `3` on the first line and `4` on the second.
-
-## Debugging Tips
-
-- **Console Logging**: Use `console.log()` statements in `solution.js` to debug outputs or intermediate steps.
-- **Color-coded Test Output**: The testing setup uses `chalk` for clear pass/fail messages when you run `npm test`.
-
-This repository is intended to help JavaScript users practice and improve their algorithm skills on CSES. Feel free to contribute improvements!
+This project is open-source and available under the MIT License.

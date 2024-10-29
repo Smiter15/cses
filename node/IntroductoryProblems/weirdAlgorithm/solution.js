@@ -1,8 +1,8 @@
 // Test in the terminal with:
-// echo "3" | node weirdAlgorithm/solution.js
+// echo "3" | node IntroductoryProblems/weirdAlgorithm/solution.js
 
 // Test against test cases with:
-// node test weirdAlgorithm
+// node test IntroductoryProblems/weirdAlgorithm
 
 process.stdin.resume();
 process.stdin.setEncoding('utf-8');
@@ -26,6 +26,5 @@ function solveProblem(n) {
   }
   result.push(1);
 
-  // this is the answer response
   console.log(result.join(' '));
 }
