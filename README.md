@@ -1,4 +1,4 @@
-# CSES Problem Solutions Repository
+# CSES Algorithm Practice Framework
 
 This repository is designed to help developers practice and solve the [CSES problem set](https://cses.fi/) using various programming languages. It provides a structured environment for writing, testing locally, and submitting algorithm solutions in multiple languages to CSES. This repository is not intended to provide direct solutions to the problems but rather a framework for practicing and verifying solutions.
 
