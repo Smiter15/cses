@@ -79,3 +79,12 @@ This ensures each answer appears on a new line, as required by the test cases.
 - **Color-coded Test Output**: The testing setup uses `chalk` for clear pass/fail messages when you run `npm test`.
 
 This repository is intended to help JavaScript users practice and improve their algorithm skills on CSES. Feel free to contribute improvements!
+
+## Submitting Your Solution to CSES
+
+Once your solution passes all local tests, you're ready to submit it to CSES!
+
+1. **Verify:** Ensure your solution file (e.g., `solution.js`) for the specific problem is passing all local tests in the `tests` folder.
+2. **Submit:** Go to the relevant problem page on [CSES](https://cses.fi/problemset) and upload your `solution.js` file directly as your submission.
+
+After submitting, CSES will validate your solution against their test cases. If successful, you’ll see your results immediately!
