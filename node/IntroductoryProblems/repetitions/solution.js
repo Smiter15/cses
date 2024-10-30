@@ -1,7 +1,7 @@
-// Test in the terminal with:
-// echo "AAAAAAAAAA" | node IntroductoryProblems/repetitions/solution.js
+// Test with specific test case:
+// cat IntroductoryProblems/repetitions/tests/1.in | node IntroductoryProblems/repetitions/solution.js
 
-// Test against test cases with:
+// Test against all test cases with:
 // node test IntroductoryProblems/repetitions
 
 process.stdin.resume();
@@ -14,9 +14,10 @@ process.stdin.on('data', function (data) {
 
 process.stdin.on('end', function () {
   const lines = input.trim().split('\n');
-  solveProblem(lines[0]);
+  const str = lines[0];
+  solveProblem(str);
 });
 
-function solveProblem(string) {
-  console.log('input', string);
+function solveProblem(str) {
+  console.log("Input is string :", str);
 }

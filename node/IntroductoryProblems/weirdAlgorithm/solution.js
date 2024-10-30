@@ -1,7 +1,7 @@
-// Test in the terminal with:
-// echo "3" | node IntroductoryProblems/weirdAlgorithm/solution.js
+// Test with specific test case:
+// cat IntroductoryProblems/weirdAlgorithm/tests/1.in | node IntroductoryProblems/weirdAlgorithm/solution.js
 
-// Test against test cases with:
+// Test against all test cases with:
 // node test IntroductoryProblems/weirdAlgorithm
 
 process.stdin.resume();
@@ -13,8 +13,9 @@ process.stdin.on('data', function (data) {
 });
 
 process.stdin.on('end', function () {
-  const n = parseInt(input.trim(), 10);
-  solveProblem(n);
+  const lines = input.trim().split('\n');
+  const number = parseInt(lines[0], 10);
+  solveProblem(number);
 });
 
 function solveProblem(n) {

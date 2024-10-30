@@ -1,7 +1,7 @@
-// Test in the terminal with:
-// echo -e "5\n5 2 1 3" | node IntroductoryProblems/missingNumber/solution.js
+// Test with specific test case:
+// cat IntroductoryProblems/missingNumber/tests/1.in | node IntroductoryProblems/missingNumber/solution.js
 
-// Test against test cases with:
+// Test against all test cases with:
 // node test IntroductoryProblems/missingNumber
 
 process.stdin.resume();
@@ -15,11 +15,10 @@ process.stdin.on('data', function (data) {
 process.stdin.on('end', function () {
   const lines = input.trim().split('\n');
   const n = parseInt(lines[0], 10);
-  solveProblem(n, lines[1]);
+  const arr = lines[1].split(' ').map(Number);
+  solveProblem(n, arr);
 });
 
-function solveProblem(n, numbers) {
-  const arr = numbers.split(' ').map(Number);
-
-  console.log('input', n, arr);
+function solveProblem(n, arr) {
+  console.log("Input is of array length and array:", n, arr);
 }

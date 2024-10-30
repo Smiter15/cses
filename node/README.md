@@ -42,33 +42,36 @@ To test your solution against the provided test cases, run:
 node test <section-name>/<problem-name>
 ```
 
+### Node Environment Setup and Usage
+
+All commands should be run from within the `node` directory to ensure paths and configurations are correctly aligned.
+
 ### Testing Solutions Locally
 
-To test your solution file for a single input locally, you can use the `echo` command to pass in input values directly to your `solution.js` file:
+To test your solution file for a specific input file locally, use the `cat` command to read from one of the `.in` files in your `tests` folder:
 
 ```bash
-echo "3" | node <section-name>/<problem-name>/solution.js
+cat <section-name>/<problem-name>/tests/<input-file>.in | node <section-name>/<problem-name>/solution.js
 ```
 
-In this example, `3` is passed as input.
-
-#### Multiple Values in a Single Line
-
-If your solution requires multiple inputs in one line, separate them with a space:
+For example, to test with the input in `1.in` for the `weirdAlgorithm` problem in the `IntroductoryProblems` section, run:
 
 ```bash
-echo "3 4" | node <section-name>/<problem-name>/solution.js
+cat IntroductoryProblems/weirdAlgorithm/tests/1.in | node IntroductoryProblems/weirdAlgorithm/solution.js
 ```
 
-#### Multiple Values Across Multiple Lines
+Replace `1.in` with any other test file to test different inputs as needed.
 
-To provide input across multiple lines, use `-e` with `echo` and `\n` to separate lines:
+### Output Requirements
 
-```bash
-echo -e "3\n4" | node <section-name>/<problem-name>/solution.js
+When your solution requires output over multiple lines, use separate `console.log` statements for each line to match expected output formatting. For example:
+
+```javascript
+console.log(result1);
+console.log(result2);
 ```
 
-This command passes `3` on the first line and `4` on the second.
+This ensures each answer appears on a new line, as required by the test cases.
 
 ## Debugging Tips
 
