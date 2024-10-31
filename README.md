@@ -54,7 +54,7 @@ Refer to the `README.md` file within each language folder for more details.
 
 ## Contributing
 
-We welcome contributions to expand the repository to other languages, add test cases, or improve existing solutions. To contribute:
+We welcome contributions to expand the repository to other languages and add test cases. To contribute:
 
 1. **Fork the repository** and create a new branch for your language or feature.
 2. **Add your feature** within the appropriate language folder.
