@@ -14,11 +14,11 @@ process.stdin.on('data', function (data) {
 
 process.stdin.on('end', function () {
   const lines = input.trim().split('\n');
-  const grid = lines;
-  solveProblem(grid);
+  const board = lines.map(line => line.split(''));
+  solveProblem(board);
 });
 
-function solveProblem(grid) {
-  console.log("Input of grid:");
-  grid.forEach(row => console.log(row));
+function solveProblem(board) {
+  console.log("Chessboard layout:");
+  board.forEach(row => console.log(row.join('')));
 }

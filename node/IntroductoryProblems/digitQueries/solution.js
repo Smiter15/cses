@@ -20,6 +20,5 @@ process.stdin.on('end', function () {
 });
 
 function solveProblem(q, queries) {
-  console.log("Input of number of queries and each query:");
-  queries.forEach(query => console.log(query));
+  console.log("Number of queries:", q, "\nQueries:", queries);
 }

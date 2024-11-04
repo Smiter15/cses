@@ -14,10 +14,10 @@ process.stdin.on('data', function (data) {
 
 process.stdin.on('end', function () {
   const lines = input.trim().split('\n');
-  const str = lines[0];
-  solveProblem(str);
+  const sequence = lines[0];
+  solveProblem(sequence);
 });
 
-function solveProblem(str) {
-  console.log("Input is string :", str);
+function solveProblem(sequence) {
+  console.log("DNA sequence:", sequence);
 }

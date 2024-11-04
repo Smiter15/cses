@@ -73,6 +73,31 @@ console.log(result2);
 
 This ensures each answer appears on a new line, as required by the test cases.
 
+### Important Note on Multiple-Answer Problems
+
+The following problems can have multiple valid answers:
+
+- `IntroductoryProblems/grayCode`
+- `IntroductoryProblems/palindromeReorder`
+- `IntroductoryProblems/permutations`
+- `IntroductoryProblems/twoSets`
+- `IntroductoryProblems/towerOfHanoi`
+
+- `SortingAndSearching/apartments`
+- `SortingAndSearching/concertTickets`
+- `SortingAndSearching/sumOfTwoValues`
+- `SortingAndSearching/sumOfThreeValues`
+- `SortingAndSearching/sumOfFourValues`
+- `SortingAndSearching/roomAllocation`
+- `SortingAndSearching/trafficLights`
+- `SortingAndSearching/josephusProblemII`
+- `SortingAndSearching/movieFestivalII`
+
+Each of these problems has at least one example solution in the repository, which is still valid for local testing. However, it’s possible to develop a correct algorithm that may produce an alternative solution not matching the example output files. In these cases, your solution may still be correct.
+
+**Recommendation:**  
+If you encounter a case where your solution does not pass all local tests but seems logically correct, we recommend submitting it to the CSES platform for verification, as the CSES judge will correctly validate alternative correct outputs.
+
 ## Debugging Tips
 
 - **Console Logging**: Use `console.log()` statements in `solution.js` to debug outputs or intermediate steps.

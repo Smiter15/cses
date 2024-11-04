@@ -14,10 +14,10 @@ process.stdin.on('data', function (data) {
 
 process.stdin.on('end', function () {
   const lines = input.trim().split('\n');
-  const str = lines[0];
-  solveProblem(str);
+  const pathDescription = lines[0];
+  solveProblem(pathDescription);
 });
 
-function solveProblem(str) {
-  console.log("Input is string :", str);
+function solveProblem(pathDescription) {
+  console.log("Path description:", pathDescription);
 }

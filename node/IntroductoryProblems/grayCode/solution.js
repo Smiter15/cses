@@ -14,10 +14,10 @@ process.stdin.on('data', function (data) {
 
 process.stdin.on('end', function () {
   const lines = input.trim().split('\n');
-  const number = parseInt(lines[0], 10);
-  solveProblem(number);
+  const n = parseInt(lines[0], 10);
+  solveProblem(n);
 });
 
-function solveProblem(number) {
-  console.log("Input is single number:", number);
+function solveProblem(n) {
+  console.log("Input n for Gray code:", n);
 }

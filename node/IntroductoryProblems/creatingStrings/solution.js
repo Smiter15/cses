@@ -19,5 +19,5 @@ process.stdin.on('end', function () {
 });
 
 function solveProblem(str) {
-  console.log("Input is string :", str);
+  console.log("Input string:", str);
 }

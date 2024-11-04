@@ -15,10 +15,10 @@ process.stdin.on('data', function (data) {
 process.stdin.on('end', function () {
   const lines = input.trim().split('\n');
   const n = parseInt(lines[0], 10);
-  const arr = lines[1].split(' ').map(Number);
-  solveProblem(n, arr);
+  const array = lines[1].split(' ').map(Number);
+  solveProblem(n, array);
 });
 
-function solveProblem(n, arr) {
-  console.log("Input is of array length and array:", n, arr);
+function solveProblem(n, array) {
+  console.log("n:", n, "\nArray:", array);
 }

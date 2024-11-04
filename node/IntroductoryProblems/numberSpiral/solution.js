@@ -14,12 +14,11 @@ process.stdin.on('data', function (data) {
 
 process.stdin.on('end', function () {
   const lines = input.trim().split('\n');
-  const n = parseInt(lines[0], 10);
+  const t = parseInt(lines[0], 10);
   const queries = lines.slice(1).map(line => line.split(' ').map(Number));
-  solveProblem(n, queries);
+  solveProblem(t, queries);
 });
 
-function solveProblem(n, queries) {
-  console.log("Input of n pairs of values and arrays of pairs:");
-  queries.forEach(query => console.log(query));
+function solveProblem(t, queries) {
+  console.log("Number of test cases:", t, "\nQueries:", queries);
 }
