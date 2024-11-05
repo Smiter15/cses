@@ -75,28 +75,25 @@ This ensures each answer appears on a new line, as required by the test cases.
 
 ### Important Note on Multiple-Answer Problems
 
-The following problems can have multiple valid answers:
+Some problems in this repository allow for multiple correct solutions, meaning the output might vary while still being correct. Below is a list of such problems, organized by section:
 
-- `IntroductoryProblems/grayCode`
-- `IntroductoryProblems/palindromeReorder`
-- `IntroductoryProblems/permutations`
-- `IntroductoryProblems/twoSets`
-- `IntroductoryProblems/towerOfHanoi`
+- **Introductory Problems**:  
+  `grayCode`, `palindromeReorder`, `permutations`, `twoSets`, `towerOfHanoi`
 
-- `SortingAndSearching/apartments`
-- `SortingAndSearching/concertTickets`
-- `SortingAndSearching/sumOfTwoValues`
-- `SortingAndSearching/sumOfThreeValues`
-- `SortingAndSearching/sumOfFourValues`
-- `SortingAndSearching/roomAllocation`
-- `SortingAndSearching/trafficLights`
-- `SortingAndSearching/josephusProblemII`
-- `SortingAndSearching/movieFestivalII`
+- **Sorting and Searching**:  
+  `apartments`, `concertTickets`, `sumOfTwoValues`, `sumOfThreeValues`, `sumOfFourValues`,  
+  `roomAllocation`, `trafficLights`, `josephusProblemII`, `movieFestivalII`
 
-Each of these problems has at least one example solution in the repository, which is still valid for local testing. However, it’s possible to develop a correct algorithm that may produce an alternative solution not matching the example output files. In these cases, your solution may still be correct.
+- **Dynamic Programming**:  
+  `projects`, `countingNumbers`, `arrayDescription`
+
+- **Graph Algorithms**:  
+  `labyrinth`, `buildingRoads`, `messageRoute`, `buildingTeams`, `roundTrip`, `monsters`, `cycleFinding`, `flightRoutes`, `roundTripII`, `courseSchedule`, `longestFlightRoute`, `investigation`, `planetsQueriesII`, `roadConstruction`, `planetsAndKingdoms`, `giantPizza`, `mailDelivery`, `teleportersPath`, `knightsTour`, `schoolDance`, `distinctRoutes`
+
+Each problem has a sample solution in the repository for local testing, but alternative correct outputs may also exist.
 
 **Recommendation:**  
-If you encounter a case where your solution does not pass all local tests but seems logically correct, we recommend submitting it to the CSES platform for verification, as the CSES judge will correctly validate alternative correct outputs.
+If your solution does not pass all local tests but seems logically correct, we recommend submitting it to the CSES platform for validation, as the CSES judge will verify alternative outputs correctly.
 
 ## Debugging Tips
 
