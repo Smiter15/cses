@@ -90,6 +90,12 @@ Some problems in this repository allow for multiple correct solutions, meaning t
 - **Graph Algorithms**:  
   `labyrinth`, `buildingRoads`, `messageRoute`, `buildingTeams`, `roundTrip`, `monsters`, `cycleFinding`, `flightRoutes`, `roundTripII`, `courseSchedule`, `longestFlightRoute`, `investigation`, `planetsQueriesII`, `roadConstruction`, `planetsAndKingdoms`, `giantPizza`, `mailDelivery`, `teleportersPath`, `knightsTour`, `schoolDance`, `distinctRoutes`
 
+- **Range Queries**:  
+  `listRemovals`, `rangeQueriesAndCopies`, `distinctValuesQueries`
+
+- **Tree Algorithms**:  
+  `treeMatching`, `countingPaths`, `fixedLengthPathsI`, `fixedLengthPathsII`
+
 Each problem has a sample solution in the repository for local testing, but alternative correct outputs may also exist.
 
 **Recommendation:**  
