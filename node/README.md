@@ -99,6 +99,9 @@ Some problems in this repository allow for multiple correct solutions, meaning t
 - **Mathematics**:  
   `josephusQueries`, `commonDivisors`, `countingNecklaces`, `countingGrids`
 
+- **String Algorithms**:  
+  `minimalRotation`, `longestPalindrome`, `substringOrderI`, `substringOrderII`, `repeatingSubstring`
+
 Each problem has a sample solution in the repository for local testing, but alternative correct outputs may also exist.
 
 **Recommendation:**  
