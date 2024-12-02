@@ -105,6 +105,9 @@ Some problems in this repository allow for multiple correct solutions, meaning t
 - **Geometry**:  
   `pointInPolygon`, `polygonLatticePoints`, `convexHull`
 
+- **Advanced Techniques**:  
+  `taskAssignment`, `distinctRoutesII`
+
 Each problem has a sample solution in the repository for local testing, but alternative correct outputs may also exist.
 
 **Recommendation:**  
