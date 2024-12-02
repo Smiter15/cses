@@ -108,6 +108,9 @@ Some problems in this repository allow for multiple correct solutions, meaning t
 - **Advanced Techniques**:  
   `taskAssignment`, `distinctRoutesII`
 
+- **Additional Problems**:
+  `bitSubstrings`, `reversalSorting`, `countingReorders`, `bookShopII`, `fillingTrominos`, `codingCompany`, `twoStacksSorting`, `gridCompletion`, `creatingOffices`, `functionalGraphDistribution`, `newFlightRoutes`, `gridPathConstruction`
+
 Each problem has a sample solution in the repository for local testing, but alternative correct outputs may also exist.
 
 **Recommendation:**  
